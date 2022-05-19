@@ -1,0 +1,111 @@
+.banner {
+    position: relative;
+    height: 56.25vw;
+    min-height: 248px;
+    color: white;
+    object-fit: center;
+
+}
+
+.banner::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    background: linear-gradient(77deg,rgba(0,0,0,.6) 0,rgba(0,0,0,0) 85%);
+}
+
+.banner__contents {
+    position: relative;
+    margin-left: 58px;
+    padding-top: 6.3vw;
+    z-index: 6;
+}
+
+.banner__title {
+    height: 13.2vw;
+    margin-bottom: 1.2vw;
+    margin-top: 2.3vw;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.banner__titleImg {
+    width: 37.5%;
+}
+
+.banner__moveToday {
+    font-size: 1.6vw;
+    padding-bottom: 0.1vw;
+    display: flex;
+    align-items: center;
+    margin-top: 1.5vw;
+}
+
+.banner__top10 {
+    width: 2vw;
+    height: 2vw;
+    margin-right: 1vw;
+}
+
+.banner__description {
+    width: 37.5%;
+    height: 100%;
+    font-size: 1.2vw;
+    line-height: 1.2;
+    margin-top: 20px;
+}
+
+.banner__buttons {
+    display: flex;
+    margin-top: 1.5vw;
+}
+
+.banner__button {
+    font-size: 1.2vw;
+    font-weight: bold;
+    padding: .5vw 1.4vw;
+    border-radius: 0.4vw;
+    border-color: transparent;
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.banner__button--more {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.banner__button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.banner__button--more:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.banner__button:first-child {
+    margin-right: 1vw;
+}
+
+.banner__play {
+    height: 2vw;
+    margin-right: 1vw;
+}
+
+.banner--fadeBottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    height: 7.4rem;
+    width: 100%;
+    background-image: linear-gradient(to bottom,rgba(20,20,20,0) 0,rgba(20,20,20,.15) 15%,rgba(20,20,20,.35) 29%,rgba(20,20,20,.58) 44%,#141414 68%,#141414 100%);
+}

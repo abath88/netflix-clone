@@ -1,0 +1,91 @@
+.profileScreen {
+    min-height: 800px;
+    background-color: white;
+}
+
+.profileScreen__nav {
+    height: 68px;
+    width: 100%;
+    background-color: black;
+}
+
+.profileScreen__body {
+    width: 95%;
+    max-width: 1024px;
+    margin: 40px auto 0 auto;
+}
+
+.profileScreen__body h1 {
+    font-weight: 400;
+    display: inline-flex;
+    margin-bottom: 20px;
+}
+
+.profileScreen__memberSlice {
+    font-size: .8rem;
+    font-weight: 800;
+    margin-left: 20px;
+    align-items: center;
+    height: 100%;
+    margin-top: 15px;
+}
+
+.profileScreen__details {
+}
+
+.profileScreen__section {
+    border-top: 1px solid rgba(0,0,0,.25);
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.profileScreen__header {
+    position: absolute;
+    width: 270px;
+    top: 20px;
+    left: 0;
+}
+
+.profileScreen__content {
+    padding-left: 270px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.profileScreen__content h2 {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0 0 5px;
+}
+
+.profileScreen__content h3 {
+    font-size: 14px;
+    font-weight: 400;
+    color: grey;
+    padding: 5px 0;
+}
+
+.profileScreen__content span {
+    text-align: right;
+    color: rgb(0, 115, 230);
+    cursor: pointer;
+}
+
+.profileScreen__content span:hover {
+    text-decoration: underline;
+}
+
+.profileScreen__content span:first-child {
+    padding: 0 0 5px;
+}
+
+.profileScreen__content span:not(:first-child) {
+    padding: 5px 0;
+}
+
+.profileScreen__contentCol {
+    display: flex;
+    flex-direction: column;
+}

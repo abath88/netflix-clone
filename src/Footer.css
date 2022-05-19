@@ -1,0 +1,36 @@
+.footer {
+    max-width: 980px;
+    margin: 140px auto 0;
+    padding: 0 4%;
+    
+}
+
+.footer__menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer__social {
+    display: flex;
+    padding: 20px 0;
+}
+
+.footer__social > * {
+    margin-right: 30px;
+}
+
+.footer span {
+    flex-basis: 25%;
+    color: grey;
+    text-decoration: none;
+    margin-bottom: 16px;
+    font-size: 12px;
+    cursor: pointer
+}
+
+.footer__copyright {
+    color: grey;
+    font-size: 10px;
+    margin-bottom: 20px;
+}

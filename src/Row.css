@@ -1,0 +1,162 @@
+.row {
+    color: white;
+    z-index: 5;
+    padding-top: 20px;
+    position: relative;
+}
+
+.row__Large {
+    margin-top: -15vw;
+}
+
+.row h2 {
+    font-size: 12px;
+    padding-left: 48px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+@media (min-width: 800px) {
+    .row h2 {
+        font-size: 1.2vw;
+    }
+}
+
+.row__posters {
+    padding-left: 48px;
+    padding-right: 48px;
+    overflow-y: visible;
+    overflow-x: visible;
+    white-space : nowrap; /* this does the trick */
+    position: relative;
+    z-index: 1;
+} 
+
+.row__allPosters {
+    transition: transform .54s ease-in-out;
+}
+
+.row__posters::-webkit-scrollbar {
+    display: none;
+}
+.row__poster {
+    padding: 3px;
+    width: 16.666666%;
+    display: inline-flex;
+    box-sizing: border-box;
+}
+
+.row__poster {
+    padding: 3px;
+    width: 50%;
+    display: inline-flex;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 500px) {
+    .row__poster {
+        padding: 3px;
+        width: 33.333333%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .row__poster {
+        padding: 3px;
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .row__poster {
+        padding: 3px;
+        width: 20%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .row__poster {
+        padding: 3px;
+        width: 16.666666%;
+    }
+}
+
+.row__posterImg {
+    position: realtive;
+    flex-shrink: 0;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+    z-index: 99999;
+}
+
+.row__posterImg:hover {
+    transform: scale(1.06);
+}
+
+.row__arrow {
+    position: absolute;
+    top: calc(20px + 1.15vw + 15px + 6px);
+    width: 48px;
+    height: calc(100% - 20px - 15px - 1.2vw - 10px);
+    background-color: rgba(0,0,0,.3);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.row__arrow:hover {
+    background-color: rgba(0,0,0,.6);
+}
+
+.row__left {
+    left: -3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.row__right {
+    right: -3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.row__posterLarge > *{
+ width: 50%;
+}
+
+.row__topNumber {
+    font-size: 35vw;
+    font-family: Roboto;
+    font-weight: 900;
+    line-height: 0.75;
+    color: #000;
+    text-shadow: 0px 0px 4px #FFFFFF, 0px 0px 4px #FFFFFF, 0px 0px 2px #FFFFFF;
+    letter-spacing: -30px;
+}
+
+@media screen and (min-width: 500px) {
+    .row__topNumber {
+        font-size: 27vw;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .row__topNumber {
+        font-size: 21vw;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .row__topNumber {
+        font-size: 17vw;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .row__topNumber {
+        font-size: 15vw;
+    }
+}
