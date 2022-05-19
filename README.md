@@ -1,3 +1,5 @@
+Netflix UI clone with firebase authentication
+
 ### `npm start`
 
 Runs the app in the development mode.\
